@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Launch : MonoBehaviour
 {
-    public bool launch = true;
     
     public bool keypressed = false;
 
@@ -13,6 +12,11 @@ public class Launch : MonoBehaviour
     public int height = 0;
 
     public int turn = 0;
+
+    public GameObject Cannonball;
+    public Transform SpawnPoint;
+
+    public Rigidbody CBP;
 
     public Vector3 Direction;
     void Start()
@@ -47,13 +51,13 @@ public class Launch : MonoBehaviour
     }
     void FixedUpdate()
     {
-        while ((launch == true) && (keypressed == true))
+        while (keypressed == true)
         {
             myRigidbody.useGravity = true;
             Direction = new Vector3(-20, height, turn);
             myRigidbody.AddForce(Direction, ForceMode.Impulse);
-            
-            launch = false;
+
+            keypressed = false;
         }
     }
 }

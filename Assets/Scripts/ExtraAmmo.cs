@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ExtraAmmo : MonoBehaviour
 {
+    public GameObject Cannon;
     public GameObject Cannonball;
     public Transform SpawnPoint;
     public GameObject Target;
@@ -20,8 +21,11 @@ public class ExtraAmmo : MonoBehaviour
         // moving the ball.
         CBP.isKinematic = true;
         // Move the ball to the location of the SpawnPoint object.
+        Cannon.transform.rotation = Quaternion.Euler(0, 180, 0);
         Cannonball.transform.position = SpawnPoint.transform.position;
         // Reset the physics of the ball now we have moved it.
         CBP.isKinematic = false;
+        CBP.useGravity = false;
+       
     }
 }

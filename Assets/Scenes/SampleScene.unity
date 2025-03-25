@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 179316814}
   CBP: {fileID: 1254214711}
@@ -589,6 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 437862662}
   CBP: {fileID: 1254214711}
@@ -825,6 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d15147626181cd46b2ba0fc3d3247c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cannon: {fileID: 0}
   Cannonball: {fileID: 1254214706}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 642198961}
@@ -949,6 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d15147626181cd46b2ba0fc3d3247c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cannon: {fileID: 0}
   Cannonball: {fileID: 1254214706}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 701243699}
@@ -1170,6 +1174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 781723576}
   CBP: {fileID: 1254214711}
@@ -1317,6 +1322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 788852706}
   CBP: {fileID: 1254214711}
@@ -1464,6 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 1033316681}
   CBP: {fileID: 1254214711}
@@ -1650,11 +1657,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5318fd63dab7e94e8d25089df40a0db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launch: 1
   keypressed: 0
   myRigidbody: {fileID: 1254214711}
   height: 0
   turn: 0
+  Cannonball: {fileID: 0}
+  SpawnPoint: {fileID: 0}
+  CBP: {fileID: 0}
   Direction: {x: -20, y: 2, z: 0}
 --- !u!1 &1276477160
 GameObject:
@@ -1800,6 +1809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 1276477160}
   CBP: {fileID: 1254214711}
@@ -2082,6 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d15147626181cd46b2ba0fc3d3247c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cannon: {fileID: 0}
   Cannonball: {fileID: 1254214706}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 1397328878}
@@ -2410,6 +2421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 251048109}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 1849537322}
   CBP: {fileID: 1254214711}
@@ -2460,6 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d15147626181cd46b2ba0fc3d3247c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cannon: {fileID: 0}
   Cannonball: {fileID: 1254214706}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 1903937523}
@@ -2718,6 +2731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cannonball: {fileID: 1254214706}
+  Cannon: {fileID: 0}
   SpawnPoint: {fileID: 1254214707}
   Target: {fileID: 2024448029}
   CBP: {fileID: 1254214711}
