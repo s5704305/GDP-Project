@@ -56,7 +56,8 @@ public class Launch : MonoBehaviour
             myRigidbody.useGravity = true;
             Direction = new Vector3(-20, height, turn);
             myRigidbody.AddForce(Direction, ForceMode.Impulse);
-
+            height = 0;
+            turn = 0;
             keypressed = false;
         }
     }

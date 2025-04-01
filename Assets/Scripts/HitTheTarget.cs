@@ -10,7 +10,7 @@ public class HitTheTarget : MonoBehaviour
     public GameObject Target;
     public Rigidbody CBP;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.name == "CannonBall")
         {
