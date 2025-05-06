@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ExtraAmmo : MonoBehaviour
 {
+    
     public GameObject Cannon;
     public GameObject Cannonball;
     public Transform SpawnPoint;
@@ -12,9 +13,11 @@ public class ExtraAmmo : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        
         if (collision.gameObject.name == "CannonBall")
         {
             Destroy(Target);
+            AmmoRemaining += 2;
         }
         CBP = collision.gameObject.GetComponent<Rigidbody>();
         // Turn off the physics of the ball so we don’t upset the physics engine by just

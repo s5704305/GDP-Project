@@ -19,6 +19,9 @@ public class Launch : MonoBehaviour
     public Rigidbody CBP;
 
     public Vector3 Direction;
+
+    public int AmmoRemaining = 10;
+    bool ExtraAmmoImported = false;
     void Start()
     {
        
@@ -59,6 +62,17 @@ public class Launch : MonoBehaviour
             height = 0;
             turn = 0;
             keypressed = false;
+            if (AmmoRemaining > 0)
+            {
+                AmmoRemaining -= 1;
+            }
+            else
+            {
+                if (ExtraAmmoImported == false)
+                {
+                    int ExtraAmmo = GameObject.Find("CannonBall").GetComponent<ExtraAmmo>().ExtraAmmo;
+                }
+            }
         }
     }
 }

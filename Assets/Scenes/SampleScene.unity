@@ -2452,6 +2452,7 @@ MonoBehaviour:
   SpawnPoint: {fileID: 1609504881}
   CBP: {fileID: 1254214711}
   Direction: {x: -20, y: 2, z: 0}
+  AmmoRemaining: 10
 --- !u!1 &1276477160
 GameObject:
   m_ObjectHideFlags: 0
