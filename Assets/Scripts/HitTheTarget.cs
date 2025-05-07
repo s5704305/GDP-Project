@@ -17,16 +17,9 @@ public class HitTheTarget : MonoBehaviour
             Destroy(Target);
         }
         CBP = collision.gameObject.GetComponent<Rigidbody>();
-        // Turn off the physics of the ball so we don’t upset the physics engine by just
-        // moving the ball.
         CBP.isKinematic = true;
-        // Move the ball to the location of the SpawnPoint object.
         Cannon.transform.rotation = Quaternion.Euler(0, 180, 0);
         Cannonball.transform.position = SpawnPoint.transform.position;
-        //Rotate = new Vector3(-0, 0, 0);
-        //Cannon(transform.Rotate(Rotate));
-        
-        // Reset the physics of the ball now we have moved it.
         CBP.isKinematic = false;
         CBP.useGravity = false;
     }
